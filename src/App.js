@@ -22,9 +22,8 @@ function App() {
   };
   return (
     <div className="App" data-theme={theme}>
-      <span>Dark Mode</span>
       <button className="DarkModeButton" onClick={switchTheme}>
-        Switch to {theme === "light" ? "dark" : "light"} Theme
+        {theme === "light" ? "dark" : "light"}
       </button>
       <main>
         <TopBar />
